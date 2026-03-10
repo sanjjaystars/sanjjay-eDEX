@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sanjjay"
+version = "0.1.0"
+description = "eDEX-UI inspired terminal portfolio CLI for Sanjjay"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Sanjjay" }
+]
+keywords = ["cli", "portfolio", "terminal", "rich", "edex-ui"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Utilities",
+]
+dependencies = [
+  "rich>=13.7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/sanjjaystars"
+Source = "https://github.com/sanjjaystars"
+LinkedIn = "https://www.linkedin.com/in/sanjjay-aroumougam-43a919382/"
+
+[project.scripts]
+sanjjay = "sanjjay.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sanjjay*"]
